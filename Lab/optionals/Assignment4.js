@@ -147,5 +147,3 @@ console.log(Claire.distFromHome())
 Claire.moveBy(5,5)
 console.log(Claire.xLocation()+", "+Claire.yLocation())
 console.log(Claire.distFromHome())
-
-
