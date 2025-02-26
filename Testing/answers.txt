@@ -1,0 +1,44 @@
+1- the source code is the instructions (or code) written in a programming language for a certain software
+
+2- computers are very fast , they can perform calculations at superhuman speed ,
+ they can store and minipulate huge amounts of data 
+
+3- programming languages are a way to speak to a computer which makes them
+   human friendly and easier to understand,instead of dealing
+   with machine code directly
+
+4- Java , python , HTML 
+   each of these languages is made to do a certain thing better than the others,
+   some are fast but hard to debug , some are slow but are much easier to debug
+
+5- a variable is a place in memory, they are used to store and retrieve data at will
+
+6- the single equal (=) is used for assigning , the double one (==) is used for conditions
+
+7- the triple equal (===) is a stricter version of (==) ,
+   it strictly conditions 2 variables to be of the same datatype
+
+8- the console contains errors , warnings and is used to help the developer debug the code
+
+9- a conditional statement only has two outcomes , either true or false
+   an example :  i>=1 , i!==7 , i===8
+
+10- loops allow the developer to excute multiple iterations of a piece of code,
+    instead of manually writing every line
+
+11- you use while loops when you dont exactly know how many times you want to loop a piece of code
+
+12- a function is a body of code that is written once and can be called(executed) anywhere in the code
+    instead of writing it everytime you need it
+
+13- functions can return 1 value , while you can give them as many values as you need
+
+14- arrays are like variables that can store multiple values, 
+    you can store as many values as you need in an array
+
+15- T-diagrams are tables that you store the state of variables in as the code executes ,
+    they help you keep track of changes you do to said variables
+
+16- the two ways to add comments are : (//) and (/*   */) 
+    you use the first one to add a single line comments,
+    while the other you can use to make multiple line comment

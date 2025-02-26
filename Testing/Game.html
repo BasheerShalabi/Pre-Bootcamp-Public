@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Quiz Game !
+    </title>
+</head>
+
+<body>
+    <script>
+        function AddName(_name) {
+            var questions = [
+                [`What does ${_name} call the collection of instructions that are written in a programming language that make a certain program ?`,
+                `What does ${_name} think the datatype that can only take one of two values (true or false) is ?`,
+                `Can ${_name} name the tool that developers use and is mainly used for debuging,it also contains errors and warnings ?`,
+                `It is a special software that developers use to write and build programs. What do you call it ${_name} ?`,
+                `Does ${_name} know what the markup language that is used to build web pages is called ?`],
+                ["source code", "boolean", "console", "ide", "html"]
+            ]
+            return questions
+        }
+
+        function QuizGame() {
+            var name = null;
+            var correct = 0;
+            var answered = 0;
+            //check if name isnt null
+            while (!name) {
+                name = prompt('Enter your name: ')
+                if (!name) {
+                    alert("You need to enter a name!")
+                }
+            }
+            //check if user asked to quit else continue
+            if (name === "Q") {
+                window.close();
+            } else {
+                //add name to the questions
+                var quiz = AddName(name);
+                alert("The quiz will now start, click cancel or type Q to finalize")
+                //start displaying questions
+                for (var i = 0; i < quiz[0].length; i++) {
+                    //change the answer to lowercase
+                    var answer = prompt(quiz[0][i]);
+                    if(answer) answer = answer.toLowerCase();
+                    //check for quit
+                    if (answer === "q" || answer ==null) {
+                        break;
+                        //check if the answer is correct and increase the score if it is
+                    } else if (answer === quiz[1][i]) {
+                        correct++;
+                        answered++;
+                    } else {
+                        answered++;
+                    }
+                }
+
+                alert(`Name: ${name}   Answered questions: ${answered}    Score:${correct}`)
+                console.log(`Name: ${name}   Answered questions: ${answered}    Score:${correct}`)
+            }
+        }
+        QuizGame()
+        window.close();
+    </script>
+</body>
+
+</html>
