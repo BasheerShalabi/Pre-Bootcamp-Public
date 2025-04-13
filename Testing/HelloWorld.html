@@ -1,15 +1,31 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>
-        My HTML asignment
-    </title>
-</head>
-
 <body>
-    <p>Hello World!</p>
-    
-</body>
 
+<div id="element">My Header</div>
+
+<p>Click the button to see the width change.</p>
+
+<button id="myBtn">Try it</button>
+
+
+
+<script>
+
+document.getElementById("myBtn").addEventListener("click", callbackFunc);
+
+var element = document.getElementById("element")
+element.style.width = "100px";
+element.style.overflow = "hidden";
+element.style.backgroundColor = "blue";
+
+function callbackFunc() {
+   
+element.style.transition = "all 2s";
+
+element.style.width = "0px";
+}
+</script>
+
+</body>
 </html>
